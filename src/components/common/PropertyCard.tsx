@@ -1,3 +1,5 @@
+//Property card 
+
 import { Place } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import {

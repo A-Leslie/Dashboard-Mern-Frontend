@@ -1,3 +1,5 @@
+//importing and exporting all pages
+
 import AgentProfile from "./agent-profile";
 import Agents from "./agent";
 import AllProperties from "./all-properties";

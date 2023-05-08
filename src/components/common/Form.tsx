@@ -1,4 +1,4 @@
-
+//Creating property form
 import {
     Box,
     Typography,
@@ -131,7 +131,7 @@ const Form = ({
                                 inputProps={{ "aria-label": "Without label" }}
                                 defaultValue="apartment"
                                 style={{backgroundColor : "#475be8",
-                             borderRadius:"2%",color:"white"}}
+                             borderRadius:"20",color:"white"}}
                                 {...register("propertyType", {
                                     required: true,
                                 })}
@@ -166,24 +166,9 @@ const Form = ({
                                 type="number"
                                 variant="outlined"
                                 style={{backgroundColor : "#475be8",
-                             borderRadius:"2%",color:"white"}}
+                             borderRadius:"4%",color:"white"}}
                                 {...register("price", { required: true })}
                             />
-                              {/* <TextareaAutosize
-                            minRows={2}
-                            required
-                            color="info"
-                            style={{
-                                width: "50%",
-                                background: "transparent",
-                                fontSize: "16px",
-                                borderColor: "rgba(0,0,0,0.23)",
-                                borderRadius: 6,
-                                padding: 10,
-                                color: "black",
-                            }}
-                            {...register("price", { required: true })}
-                        /> */}
                         </FormControl>
                     </Stack>
 
