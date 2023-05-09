@@ -60,6 +60,25 @@ const PropertyDetails = () => {
             );
         }
     };
+    const handleBookProperty = () => {
+        // eslint-disable-next-line no-restricted-globals
+        const response = confirm(
+            "Do you really want to book this property?",
+        );
+        if (response) {
+            mutate(
+                {
+                    resource: "properties",
+                    id: id as string,
+                },
+                {
+                    onSuccess: () => {
+                        navigate("/book");
+                    },
+                },
+            );
+        }
+    };
 
     return (
         <Box
@@ -320,6 +339,9 @@ const PropertyDetails = () => {
                             backgroundColor="#475BE8"
                             color="#FCFCFC"
                             fullWidth
+                            handleClick={() => {
+                                if (isCurrentUser) handleBookProperty();
+                            }}
                         />
                     </Box>
                 </Box>
