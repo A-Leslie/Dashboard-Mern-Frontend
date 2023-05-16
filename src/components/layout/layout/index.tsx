@@ -6,6 +6,7 @@ import { Sider as DefaultSider } from "../sider";
 import { Header as DefaultHeader } from "../header";
 import { BookProperty } from "pages";
 
+
 export const Layout: React.FC<LayoutProps> = ({
     Sider,
     Header,
@@ -30,7 +31,7 @@ export const Layout: React.FC<LayoutProps> = ({
             >
                 <HeaderToRender />
                 {/* <BookProperty/> */}
-                {/* <Box
+                <Box
                     component="main"
                     sx={{
                         p: { xs: 1, md: 2, lg: 3 },
@@ -42,7 +43,7 @@ export const Layout: React.FC<LayoutProps> = ({
                     {children}
                     
                 </Box>
-              */}
+             
                 {Footer && <Footer />}
             </Box>
             {OffLayoutArea && <OffLayoutArea />}

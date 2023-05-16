@@ -18,6 +18,7 @@ import {
 } from "@mui/icons-material";
 
 
+
 import dataProvider from "@refinedev/simple-rest";
 import routerProvider from "@refinedev/react-router-v6/legacy";
 import axios, { AxiosRequestConfig } from "axios";
@@ -129,7 +130,7 @@ function App() {
 
     return (
         <>
-        
+          
             <ColorModeContextProvider>
                 <CssBaseline />
                 <GlobalStyles styles={{ html: { WebkitFontSmoothing: "auto" } }} />
@@ -183,14 +184,8 @@ function App() {
                         legacyAuthProvider={authProvider}
                         LoginPage={Login}
                         DashboardPage={Home}
-                       
-                        
-                        
-                       
                     />
-        
-         
-                </RefineSnackbarProvider>
+        </RefineSnackbarProvider>
              
                 <Router>
                                     <Routes>
@@ -198,7 +193,7 @@ function App() {
                                     </Routes>
                                     </Router>
             </ColorModeContextProvider>
-           
+        
     
        
         </>
