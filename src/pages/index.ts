@@ -9,6 +9,8 @@ import { Login } from "./login";
 import MyProfile from "./my-profile";
 import PropertyDetails from "./property-details";
 import EditProperty from "./edit-property";
+import BookProperty from "./BookProperty";
+
 
 export {
     AgentProfile,
@@ -20,4 +22,6 @@ export {
     MyProfile,
     PropertyDetails,
     EditProperty,
+    BookProperty
+
 };

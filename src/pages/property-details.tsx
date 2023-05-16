@@ -1,6 +1,9 @@
 import { Typography, Box, Stack } from "@mui/material";
 import { useDelete, useGetIdentity, useShow } from "@refinedev/core";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { BrowserRouter as Router,Route ,Routes} from 'react-router-dom';
+
 import {
     ChatBubble,
     Delete,
@@ -10,7 +13,18 @@ import {
     Star,
 } from "@mui/icons-material";
 
+
 import { CustomButton } from "components";
+// import axios from "axios";
+// import { useState } from "react";
+import BookProperty from "./BookProperty";
+import { useLocation } from 'react-router-dom';
+import { pathToFileURL } from "url";
+
+ 
+
+
+
 
 function checkImage(url: any) {
     const img = new Image();
@@ -19,6 +33,7 @@ function checkImage(url: any) {
 }
 
 const PropertyDetails = () => {
+    const propertyId = useParams().id
     const navigate = useNavigate();
     const { data: user } = useGetIdentity({
         v3LegacyAuthProviderCompatible: true,
@@ -60,27 +75,42 @@ const PropertyDetails = () => {
             );
         }
     };
-    const handleBookProperty = () => {
-        // eslint-disable-next-line no-restricted-globals
-        const response = confirm(
-            "Do you really want to book this property?",
-        );
-        if (response) {
-            mutate(
-                {
-                    resource: "properties",
-                    id: id as string,
-                },
-                {
-                    onSuccess: () => {
-                        navigate("/book");
-                    },
-                },
-            );
-        }
-    };
+    
+    //     const handleBookProperty= ()=> {
+    //     // eslint-disable-next-line react-hooks/rules-of-hooks
+    //     // const location = useLocation();
+    //     // console.log(location);
+    //     return (
+    //        <Router>
+    //        <Routes>
+    //        <Route  path="/book" element={<BookProperty/>} ></Route>
+    //        </Routes>
+    //        </Router>
+       
+    //     )
+    //   }  
+    
+   
+
+
+    // function BookProperty() {
+    //   const location = useLocation();
+    //   console.log(location);
+    //   return (
+    //     <Router>
+    //     <Routes>
+    //       <Route path="/book" element={<BookProperty />} />
+    //     </Routes>
+    //     </Router>
+    //   );
+    // }
+    
+    // const handleBookProperty = () => {
+    //   return <BookProperty />;
+    // };
 
     return (
+        <div>
         <Box
             borderRadius="15px"
             padding="20px"
@@ -334,20 +364,32 @@ const PropertyDetails = () => {
                     </Stack>
 
                     <Box>
-                        <CustomButton
-                            title="Book Now"
-                            backgroundColor="#475BE8"
-                            color="#FCFCFC"
-                            fullWidth
-                            handleClick={() => {
-                                if (isCurrentUser) handleBookProperty();
-                            }}
-                        />
+                          <Link to={'/book'}>                          
+                            <CustomButton
+                                title="Book Now"
+                                backgroundColor="#475BE8"
+                                color="#FCFCFC"
+                                fullWidth
+                                handleClick={()=>
+                                    <Router>
+                                    <Routes>
+                                    <Route path="/book"  Component={BookProperty} />
+                                    </Routes>
+                                    </Router>
+                                  
+                                   
+                                    
+                                }
+                            />
+                        </Link> 
                     </Box>
                 </Box>
             </Box>
         </Box>
+        </div>
+
     );
 };
 
 export default PropertyDetails;
+

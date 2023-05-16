@@ -7,7 +7,6 @@ import {
     TotalRevenue,
     PropertyCard,
 } from "components";
-
 const Home = () => {
     const { data, isLoading, isError } = useList({
         resource: "properties",
