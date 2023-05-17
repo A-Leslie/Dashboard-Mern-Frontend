@@ -184,14 +184,22 @@ function App() {
                         legacyAuthProvider={authProvider}
                         LoginPage={Login}
                         DashboardPage={Home}
+
                     />
+                      <Router>
+                <Routes>
+                <Route path="/book"  Component={BookProperty} />
+                <Route path="/home" Component={Home}/>
+                <Route path="/agents" Component={Agents}/>
+                <Route path="/my-profile" Component={MyProfile}/>
+                <Route path="/property/:id" Component={PropertyDetails}/>
+                <Route path="/create-property" Component={CreateProperty}/>
+                <Route path="/edit-property/:id" Component={EditProperty}/>  
+                </Routes>
+                </Router>
         </RefineSnackbarProvider>
              
-                <Router>
-                                    <Routes>
-                                    <Route path="/book"  Component={BookProperty} />
-                                    </Routes>
-                                    </Router>
+              
             </ColorModeContextProvider>
         
     
