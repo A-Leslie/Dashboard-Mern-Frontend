@@ -1,13 +1,10 @@
 import React from 'react'
 
-
-function BookProperty() {
+const BookProperty = () => {
   return (
-    <div>
-     
-      <h1>hello world</h1>
-   
-    </div>
+    
+      <h1 style={{color:"white" ,paddingLeft:"300px"}}>Hello world</h1>
+  
   )
 }
 

@@ -3,6 +3,8 @@ import { useOne } from "@refinedev/core";
 import { useParams } from "react-router-dom";
 
 import { Profile } from "components";
+import { BorderHorizontal } from "@mui/icons-material";
+import { Box } from "@mui/material";
 
 const AgentProfile = () => {
     const { id } = useParams<{ id: string }>();
@@ -20,7 +22,10 @@ const AgentProfile = () => {
     if (isError) return <div>error...</div>;
 
     return (
+        
+     
         <Profile
+    
             type="Agent"
             name={myProfile.name}
             email={myProfile.email}
@@ -28,6 +33,7 @@ const AgentProfile = () => {
             properties={myProfile.allProperties}
            
         />
+          
     );
 };
 

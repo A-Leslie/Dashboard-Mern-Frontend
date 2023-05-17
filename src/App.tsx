@@ -186,7 +186,7 @@ function App() {
                         DashboardPage={Home}
 
                     />
-                      <Router>
+                      {/* <Router>
                 <Routes>
                 <Route path="/book"  Component={BookProperty} />
                 <Route path="/home" Component={Home}/>
@@ -196,7 +196,7 @@ function App() {
                 <Route path="/create-property" Component={CreateProperty}/>
                 <Route path="/edit-property/:id" Component={EditProperty}/>  
                 </Routes>
-                </Router>
+                </Router> */}
         </RefineSnackbarProvider>
              
               
