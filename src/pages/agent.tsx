@@ -12,6 +12,14 @@ const Agents = () => {
     if (isError) return <div>error...</div>;
 
     return (
+        <Box
+        sx={{
+            p: { xs: 1, md: 2, lg: 3 },
+            flexGrow: 1,
+            bgcolor:"#e2e2e2",
+            
+            
+        }}>
         <Box>
             <Typography fontSize={25} fontWeight={700} color="#11142d">
                 Agents List
@@ -38,6 +46,7 @@ const Agents = () => {
                     />
                 ))}
             </Box>
+        </Box>
         </Box>
     );
 };

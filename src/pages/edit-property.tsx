@@ -40,6 +40,7 @@ const CreateProperty = () => {
 
     return (
         <Form
+        
             type="Edit"
             register={register}
             onFinish={onFinish}

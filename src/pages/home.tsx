@@ -20,19 +20,29 @@ const Home = () => {
     const latestProperties = data?.data ?? [];
 
     if (isLoading) return <Typography>Loading...</Typography>;
-    if (isError) return <Typography>Something went wrong!</Typography>;
+    if (isError) return <Typography>Something went wrong!</Typography>
 
     return (
         <Box
-       
+        // ml="150px"
+        // pt="0px"
+        
         sx={{
+            // p: { xs: 2, md: 10, lg: 10},
+            // flexGrow: 1,
+            // bgcolor:"#e2e2e2",
+            
             p: { xs: 1, md: 2, lg: 3 },
             flexGrow: 1,
             bgcolor:"#e2e2e2",
+                
+                
             
-            
-        }}>
-            <Typography fontSize={25} fontWeight={700} color="#11142D">
+             
+        }}
+        >
+            <Typography fontSize={30} fontWeight={700} color="#11142D" marginTop="5px"
+            >
                 Dashboard
             </Typography>
 

@@ -33,6 +33,7 @@
 
 
 
+import { Box } from "@mui/material";
 import { useGetIdentity, useOne } from "@refinedev/core";
 
 import { Profile } from "components";
@@ -53,6 +54,14 @@ const MyProfile = () => {
     if (isError) return <div>error...</div>;
 
     return (
+    <Box
+    sx={{
+        p: { xs: 1, md: 2, lg: 3 },
+        flexGrow: 1,
+        bgcolor:"#e2e2e2",
+        
+        
+    }}>
         <Profile
             type="My"
             name={myProfile.name}
@@ -60,6 +69,7 @@ const MyProfile = () => {
             avatar={myProfile.avatar}
             properties={myProfile.allProperties}
         />
+        </Box>
     );
 };
 
