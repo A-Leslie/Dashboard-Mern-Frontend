@@ -5,6 +5,7 @@ import { useForm } from "@refinedev/react-hook-form";
 import { FieldValues } from "react-hook-form";
 
 import Form from "components/common/Form";
+import { Box } from "@mui/material";
 
 const CreateProperty = () => {
     const { data: user } = useGetIdentity({
@@ -41,6 +42,22 @@ const CreateProperty = () => {
     };
 
     return (
+        <Box
+    
+        ml={"200px"}
+        
+        sx={{
+            p: { xs: 1, md: 2, lg: 3 },
+            flexGrow: 1,
+            bgcolor:"#e2e2e2",
+            display: "flex",
+            flexDirection: "column",
+            flex: 1,
+            minHeight: "100vh",
+            
+            
+        }}
+        >
         <Form
             type="Create"
             register={register}
@@ -50,7 +67,10 @@ const CreateProperty = () => {
             handleImageChange={handleImageChange}
             onFinishHandler={onFinishHandler}
             propertyImage={propertyImage}
+           
         />
+        </Box>
+    
     );
 };
 export default CreateProperty;

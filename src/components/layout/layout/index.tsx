@@ -31,20 +31,20 @@ export const Layout: React.FC<LayoutProps> = ({
     const HeaderToRender = Header ?? DefaultHeader;
 
     return (
-        // <>
-        <Box display="flex" flexDirection="row">
+        <>
+        {/* <Box display="flex" flexDirection="row"> */}
             <SiderToRender />
-            <Box
+            {/* <Box
                 sx={{
                     display: "flex",
                     flexDirection: "column",
                     flex: 1,
                     minHeight: "100vh",
                 }}
-            >
+            > */}
                 <HeaderToRender />
                 {/* <BookProperty/> */}
-                <Box
+                {/* <Box
                     // component="main"
                     sx={{
                         p: { xs: 1, md: 2, lg: 3 },
@@ -56,28 +56,28 @@ export const Layout: React.FC<LayoutProps> = ({
                     {children}
                   
                     
-                </Box>
+                </Box> */}
              
                 {Footer && <Footer />}
-            </Box>
+            {/* </Box>
             {OffLayoutArea && <OffLayoutArea />}
          
-        </Box>
+        </Box> */}
     
         
-        // {/* <Routes>
-        //     <Route path="/" element={<Home/>} />
-        //     <Route path="/book" element={<BookProperty/>} />
-        //     <Route path="/edit-property" element={<EditProperty/>} />
-        //     <Route path="/properties" element={<AllProperties/>} />
-        //     <Route path="/create-property" element={<CreateProperty/>} />
-        //     <Route path="/agents" element={<Agents/>} />
-        //     <Route path="/my-profile" element={<MyProfile/>} />
-        //     <Route path="/properties/show/:id" element={<PropertyDetails/>} />
-        //     <Route path="/login" element={<Login/>} />
-        //     <Route path="/agent/:id" element={<AgentProfile/>} />
-        // </Routes>
-        // </> */}
+        <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/book" element={<BookProperty/>} />
+            <Route path="/properties/edit/:id" element={<EditProperty/>} />
+            <Route path="/properties" element={<AllProperties/>} />
+            <Route path="/properties/create" element={<CreateProperty/>} />
+            <Route path="/agents" element={<Agents/>} />
+            <Route path="/my-profile" element={<MyProfile/>} />
+            <Route path="/properties/show/:id" element={<PropertyDetails/>} />
+            <Route path="/login" element={<Login/>} />
+            <Route path="/agent/:id" element={<AgentProfile/>} />
+        </Routes>
+        </> 
        
     );
 };

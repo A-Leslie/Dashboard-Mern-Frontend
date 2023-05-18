@@ -56,17 +56,21 @@ const AllProperties = () => {
 
     return (
         <Box
-        // ml="200px"
-        // mb="0px"
+        bgcolor={"#e2e2e2"}
+        ml="200px"
+        mb="0px"
         sx={{
             p: { xs: 1, md: 2, lg: 3 },
             flexGrow: 1,
             bgcolor:"#e2e2e2",
-            height:"100%"
+            display: "flex",
+            flexDirection: "column",
+            flex: 1,
+            minHeight: "100vh",
             
             
         }}>
-            <Box mt="20px" sx={{ display: "flex", flexWrap: "wrap", gap: 3}}>
+            <Box mt="20px" sx={{ display: "flex", flexWrap: "wrap", gap:3 , ml: "7px"}}>
                 <Stack direction="column" width="100%">
                     <Typography fontSize={25} fontWeight={700} color="black">
                         {!allProperties.length
@@ -74,6 +78,7 @@ const AllProperties = () => {
                             : "All Properties"}
                     </Typography>
                     <Box
+                    
                         mb={2}
                         mt={3}
                         display="flex"
@@ -87,6 +92,7 @@ const AllProperties = () => {
                             flexWrap="wrap"
                             mb={{ xs: "20px", sm: 0 }}
                             color="black"
+                            
                         >
                             <CustomButton
                                 title={`Sort price ${
@@ -164,6 +170,7 @@ const AllProperties = () => {
             </Box>
 
             <Stack
+            ml= "4px"
                 direction="row"
                 justifyContent="space-between"
                 alignItems="center"
@@ -178,7 +185,7 @@ const AllProperties = () => {
                 />
             </Stack>
 
-            <Box mt="20px" sx={{ display: "flex", flexWrap: "wrap", gap: 3 }}>
+            <Box mt="20px" sx={{ display: "flex", flexWrap: "wrap", gap: 3,ml: "4px" }}>
                 {allProperties?.map((property) => (
                     <PropertyCard
                         key={property._id}

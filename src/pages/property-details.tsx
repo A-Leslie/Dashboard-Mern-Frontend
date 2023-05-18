@@ -110,7 +110,20 @@ const PropertyDetails = () => {
     // };
 
     return (
-        <div>
+        <Box
+        ml={"200px"}
+        
+        sx={{
+            p: { xs: 1, md: 2, lg: 3 },
+            flexGrow: 1,
+            bgcolor:"#e2e2e2",
+            display: "flex",
+            flexDirection: "column",
+            flex: 1,
+            minHeight: "100vh",
+            
+            
+        }}>
         <Box
             borderRadius="15px"
             padding="20px"
@@ -386,7 +399,7 @@ const PropertyDetails = () => {
                 </Box>
             </Box>
         </Box>
-        </div>
+        </Box>
 
     );
 };

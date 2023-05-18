@@ -54,14 +54,20 @@ const MyProfile = () => {
     if (isError) return <div>error...</div>;
 
     return (
-    <Box
-    sx={{
-        p: { xs: 1, md: 2, lg: 3 },
-        flexGrow: 1,
-        bgcolor:"#e2e2e2",
+        <Box
+        ml={"200px"}
         
-        
-    }}>
+        sx={{
+            p: { xs: 1, md: 2, lg: 3 },
+            flexGrow: 1,
+            bgcolor:"#e2e2e2",
+            display: "flex",
+            flexDirection: "column",
+            flex: 1,
+            minHeight: "100vh",
+            
+            
+        }}>
         <Profile
             type="My"
             name={myProfile.name}

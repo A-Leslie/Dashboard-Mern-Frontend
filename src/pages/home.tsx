@@ -24,24 +24,20 @@ const Home = () => {
 
     return (
         <Box
-        // ml="150px"
-        // pt="0px"
+        ml={"200px"}
         
         sx={{
-            // p: { xs: 2, md: 10, lg: 10},
-            // flexGrow: 1,
-            // bgcolor:"#e2e2e2",
-            
             p: { xs: 1, md: 2, lg: 3 },
             flexGrow: 1,
             bgcolor:"#e2e2e2",
-                
-                
+            display: "flex",
+            flexDirection: "column",
+            flex: 1,
+            minHeight: "100vh",
             
-             
-        }}
-        >
-            <Typography fontSize={30} fontWeight={700} color="#11142D" marginTop="5px"
+            
+        }}>
+            <Typography fontSize={30} fontWeight={700} color="#11142D"
             >
                 Dashboard
             </Typography>
