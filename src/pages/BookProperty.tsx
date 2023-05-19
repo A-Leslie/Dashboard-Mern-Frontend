@@ -9,4 +9,3 @@ function BookProperty() {
 }
 
 export default BookProperty
-

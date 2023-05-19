@@ -76,6 +76,7 @@ export const Layout: React.FC<LayoutProps> = ({
             <Route path="/properties/show/:id" element={<PropertyDetails/>} />
             <Route path="/login" element={<Login/>} />
             <Route path="/agent/:id" element={<AgentProfile/>} />
+            <Route path="/agents/show/:id" element={<AgentProfile/>} /> 
         </Routes>
         </> 
        
