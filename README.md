@@ -1,3 +1,3 @@
 # Dashboard-Mern-Frontend
-Apartech full stack 
-real estate management
+Apartech full stack app
+online real estate management
