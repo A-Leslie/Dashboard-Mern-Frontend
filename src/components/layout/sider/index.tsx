@@ -162,7 +162,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
                                     unmountOnExit
                                 >
                                     <MuiList component="div" disablePadding>
-                                        {renderTreeView(children, selectedKey)}
+                                        {/* {renderTreeView(children, selectedKey)} */}
                                     </MuiList>
                                 </Collapse>
                             )}

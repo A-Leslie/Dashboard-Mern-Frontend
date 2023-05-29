@@ -17,9 +17,10 @@ import {
 import { CustomButton } from "components";
 // import axios from "axios";
 // import { useState } from "react";
-import BookProperty from "./BookProperty";
+// import BookProperty from "./BookProperty";
 import { useLocation } from 'react-router-dom';
 import { pathToFileURL } from "url";
+import { BookProperty } from "pages";
 
  
 

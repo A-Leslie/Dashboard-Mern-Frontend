@@ -46,12 +46,9 @@ export const Layout: React.FC<LayoutProps> = ({
                 {/* <BookProperty/> */}
                 {/* <Box
                     // component="main"
-                    sx={{
-                        p: { xs: 1, md: 2, lg: 3 },
+p: { xs: 1, md: 2, lg: 3 },
                         flexGrow: 1,
                         bgcolor:"#e2e2e2",
-                        
-                    }}
                 >
                     {children}
                   
@@ -59,10 +56,10 @@ export const Layout: React.FC<LayoutProps> = ({
                 </Box> */}
              
                 {Footer && <Footer />}
-            {/* </Box>
-            {OffLayoutArea && <OffLayoutArea />}
+            {/* </Box> */}
+            {/* {OffLayoutArea && <OffLayoutArea />} */}
          
-        </Box> */}
+        {/* </Box> */}
     
         
         <Routes>
