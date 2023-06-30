@@ -427,7 +427,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
                     </Box>
                     <Box
                         sx={{
-                            flexGrow: 1,
+                            flexGrow:1,
                             overflowX: "hidden",
                             overflowY: "auto",
                         }}
@@ -449,7 +449,9 @@ export const Sider: typeof DefaultSider = ({ render }) => {
                         size="large"
                         onClick={() => setCollapsed((prev) => !prev)}
                     >
-                        {collapsed ? <ChevronRight /> : <ChevronLeft />}
+                        {collapsed ? 
+                        <ChevronRight /> : <ChevronLeft />
+                        }
                     </Button>
                 </Drawer>
                 <Box

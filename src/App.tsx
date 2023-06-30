@@ -17,8 +17,6 @@ import {
     VillaOutlined,
 } from "@mui/icons-material";
 
-
-
 import dataProvider from "@refinedev/simple-rest";
 import routerProvider from "@refinedev/react-router-v6/legacy";
 import axios, { AxiosRequestConfig } from "axios";
@@ -37,9 +35,7 @@ import {
     CreateProperty,
     AgentProfile,
     EditProperty,
-    BookProperty,
 } from "pages";
-import {BrowserRouter as Router,Route,Routes } from "react-router-dom";
 
 
 const axiosInstance = axios.create();
@@ -186,17 +182,6 @@ function App() {
                         DashboardPage={Home}
 
                     />
-                      {/* <Router>
-                <Routes>
-                <Route path="/book"  Component={BookProperty} />
-                <Route path="/home" Component={Home}/>
-                <Route path="/agents" Component={Agents}/>
-                <Route path="/my-profile" Component={MyProfile}/>
-                <Route path="/property/:id" Component={PropertyDetails}/>
-                <Route path="/create-property" Component={CreateProperty}/>
-                <Route path="/edit-property/:id" Component={EditProperty}/>  
-                </Routes>
-                </Router> */}
         </RefineSnackbarProvider>
              
               

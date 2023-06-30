@@ -12,11 +12,10 @@ const Home = () => {
         resource: "properties",
         config: {
             pagination: {
-                pageSize: 4,
+                pageSize: 1,
             },
         },
     });
-
     const latestProperties = data?.data ?? [];
 
     if (isLoading) return <Typography>Loading...</Typography>;
@@ -26,6 +25,7 @@ const Home = () => {
         <Box
         ml={"200px"}
         
+        
         sx={{
             p: { xs: 1, md: 2, lg: 3 },
             flexGrow: 1,
@@ -33,8 +33,7 @@ const Home = () => {
             display: "flex",
             flexDirection: "column",
             flex: 1,
-            minHeight: "100vh",
-            
+            minHeight: "100vh",    
             
         }}>
             <Typography fontSize={30} fontWeight={700} color="#11142D"

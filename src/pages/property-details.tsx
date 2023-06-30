@@ -17,9 +17,10 @@ import {
 import { CustomButton } from "components";
 // import axios from "axios";
 // import { useState } from "react";
-import BookProperty from "./BookProperty";
+// import BookProperty from "./BookProperty";
 import { useLocation } from 'react-router-dom';
 import { pathToFileURL } from "url";
+import { BookProperty } from "pages";
 
  
 
@@ -75,40 +76,6 @@ const PropertyDetails = () => {
             );
         }
     };
-    
-    //     const handleBookProperty= ()=> {
-    //     // eslint-disable-next-line react-hooks/rules-of-hooks
-    //     // const location = useLocation();
-    //     // console.log(location);
-    //     return (
-    //        <Router>
-    //        <Routes>
-    //        <Route  path="/book" element={<BookProperty/>} ></Route>
-    //        </Routes>
-    //        </Router>
-       
-    //     )
-    //   }  
-    
-   
-
-
-    // function BookProperty() {
-    //   const location = useLocation();
-    //   console.log(location);
-    //   return (
-    //     <Router>
-    //     <Routes>
-    //       <Route path="/book" element={<BookProperty />} />
-    //     </Routes>
-    //     </Router>
-    //   );
-    // }
-    
-    // const handleBookProperty = () => {
-    //   return <BookProperty />;
-    // };
-
     return (
         <Box
         ml={"200px"}
