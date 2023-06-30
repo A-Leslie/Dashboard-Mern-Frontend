@@ -76,40 +76,6 @@ const PropertyDetails = () => {
             );
         }
     };
-    
-    //     const handleBookProperty= ()=> {
-    //     // eslint-disable-next-line react-hooks/rules-of-hooks
-    //     // const location = useLocation();
-    //     // console.log(location);
-    //     return (
-    //        <Router>
-    //        <Routes>
-    //        <Route  path="/book" element={<BookProperty/>} ></Route>
-    //        </Routes>
-    //        </Router>
-       
-    //     )
-    //   }  
-    
-   
-
-
-    // function BookProperty() {
-    //   const location = useLocation();
-    //   console.log(location);
-    //   return (
-    //     <Router>
-    //     <Routes>
-    //       <Route path="/book" element={<BookProperty />} />
-    //     </Routes>
-    //     </Router>
-    //   );
-    // }
-    
-    // const handleBookProperty = () => {
-    //   return <BookProperty />;
-    // };
-
     return (
         <Box
         ml={"200px"}
